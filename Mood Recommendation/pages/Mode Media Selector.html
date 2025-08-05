@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Media Selector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-logo">
+      <a href="../pages/Mode Media Selector.html"><img src="../images/Logo.png" alt="Logo"></a>
+    </div>
+    <div onclick="toggleNavbar()" class="bars">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-items">
+      <a href="Mode Media Selector.html" class="nav-item active">Home</a>
+      <a href="happy.html" class="nav-item">Happy</a>
+      <a href="sad.html" class="nav-item">Sad</a>
+      <a href="excited.html" class="nav-item">Excited</a>
+      <a href="romantic.html" class="nav-item">Romantic</a>
+      <a href="../Login.htm" class="nav-item">Login | Sign up</a>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <div class="intro section active" id="home">
+    <h1>Welcome to Mood Media Selector</h1>
+    <p>Feeling something? We've got the perfect movie, song, or book for every mood.</p>
+    <p>Take a deep breath, click your current vibe, and let the content do the rest.</p>
+    <p>You're not alone—relax, discover, and enjoy personalized recommendations crafted with care.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.instagram.com">Instagram</a>
+      <a href="https://www.whatsapp.com">WhatsApp</a>
+    </div>
+    <div id="homepage-section"></div>
+
+    <!-- Features Section -->
+    <h2>Why Choose Moodify?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Discover by Mood</h3>
+        <p>We recommend movies, books, and music based on how you feel.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Save Your Favorites</h3>
+        <p>Keep your favorite content and revisit it anytime.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Suggestions</h3>
+        <p>AI-powered daily recommendations tailored to your mood.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Personalized Profile</h3>
+        <p>Every user enjoys a unique experience based on their feelings.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">What is Moodify?</div>
+        <div class="faq-answer">Moodify is a recommendation platform that suggests entertainment content based
+          on your mood.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How does Moodify work?</div>
+        <div class="faq-answer">Just choose your mood, and we'll recommend the best matching movies, songs, and
+          books.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is Moodify free?</div>
+        <div class="faq-answer">Yes! Moodify is currently free and always aims to deliver a great experience.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How do I customize my profile?</div>
+        <div class="faq-answer">Once you sign in, you can update your preferences and mood anytime.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="control-buttons">
+    <button onclick="changeBg('dark')">Dark Mode</button>
+    <button onclick="changeBg('light')">Light Mode</button>
+  </div>
+
+
+  <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
