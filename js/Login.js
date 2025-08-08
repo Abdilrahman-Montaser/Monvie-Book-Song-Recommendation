@@ -37,7 +37,7 @@ function signUp(event) {
   localStorage.setItem('users', JSON.stringify(users));
 
   alert("Registration successful!");
-  window.location.href = "/pages/ModeMediaSelector.html";
+  window.location.href = "pages/ModeMediaSelector.html";
 }
 
 
@@ -54,8 +54,9 @@ function login(event) {
 
   if (user) {
     alert("Login successful!");
-    window.location.href = "/pages/ModeMediaSelector.html";
+    window.location.href = "pages/ModeMediaSelector.html";
   } else {
     loginError.textContent = "Invalid email or password!";
   }
 }
+
