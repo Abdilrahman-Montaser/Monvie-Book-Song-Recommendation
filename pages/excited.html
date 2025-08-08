@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Media Selector | Excited Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-logo">
+      <a href="../pages/Mode Media Selector.html"><img src="../images/Logo.png" alt="Logo"></a>
+    </div>
+    <div onclick="toggleNavbar()" class="bars">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-items">
+      <a href="Mode Media Selector.html" class="nav-item">Home</a>
+      <a href="happy.html" class="nav-item">Happy</a>
+      <a href="sad.html" class="nav-item">Sad</a>
+      <a href="excited.html" class="nav-item active">Excited</a>
+      <a href="romantic.html" class="nav-item">Romantic</a>
+      <a href="../Login.htm" class="nav-item">Login | Sign up</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="excited" class="section">
+      <h2>Excited Content</h2>
+  <div class="category-title" onclick="getMovieSuggestionsByMood('excited')">Movies</div>
+<div id="suggestions-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;"></div>
+
+      <hr class="divider">
+      <div class="category">
+        <div class="category-title" onclick="toggleCategory(this)">Songs</div>
+        <div class="media-list show">
+          <div class="media-item" onclick="showModal('Song: Can’t Stop the Feeling! - Justin Timberlake')">
+            <img
+              src="https://i.discogs.com/vjTM17ua5TRsJOHN3TS7lz4RKhDCcs1FIfnHfKoNyOE/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzk1/NjMxLTE1NjEzMDgw/MTUtODQ2Ny5qcGVn.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Can’t Stop the Feeling! - Justin Timberlake</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Uptown Funk - Bruno Mars')">
+            <img
+              src="https://i.discogs.com/mO2INpvF_0JfJkIFUjADnCivvmi2mQVGJLo_O_X61q8/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NjA0/MDItMTU3MDIxNDI0/MC02OTg3LmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Uptown Funk - Bruno Mars</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Don’t Stop Me Now - Queen')">
+            <img
+              src="https://i.discogs.com/MHdotQlybj2YT2Atrax_3mdAIDmwC8z3-kJ1Tl-tSoU/rs:fit/g:sm/q:90/h:501/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NzI1/NDEtMTQyNjMyNDA3/NC0yMDEyLmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Don’t Stop Me Now - Queen</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Happy - Pharrell Williams')">
+            <img
+              src="https://i.discogs.com/_HdLeO9nHXBqcHVnxeEWf-UlihLEEJ4c3cqBZCreeNk/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MjY5/OTAtMTQxODk0MDU0/Ny01NDU1LmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Happy - Pharrell Williams</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Shake It Off - Taylor Swift')">
+            <img
+              src="https://i.discogs.com/Qp8Hw64Jdsgu4XXJndHpo8r8LZ0jET0jjEyP99J4wHs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzEx/NzQ0LTE3MTM2MDcz/MzQtOTY3Mi5qcGVn.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Shake It Off - Taylor Swift</div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="category">
+        <div class="category-title" onclick="toggleCategory(this)">Books</div>
+        <div class="media-list show">
+          <div class="media-item" onclick="showModal('Book: The Martian\nAuthor: Andy Weir')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1402688750i/22465792.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>The Martian - Andy Weir</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: Ready Player One\nAuthor: Ernest Cline')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg" class="media-poster"
+              alt="Book Cover">
+            <div>Ready Player One - Ernest Cline</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: The Hunger Games\nAuthor: Suzanne Collins')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/The_Hunger_Games.jpg" class="media-poster"
+              alt="Book Cover">
+            <div>The Hunger Games - Suzanne Collins</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: Percy Jackson: The Lightning Thief\nAuthor: Rick Riordan')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699428446i/128012887.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>The Lightning Thief - Rick Riordan</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: Artemis\nAuthor: Andy Weir')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1494273579i/34928122.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>Artemis - Andy Weir</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="media-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <img id="modal-image" src="" alt="Media" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="control-buttons">
+    <button onclick="changeBg('dark')">Dark Mode</button>
+    <button onclick="changeBg('light')">Light Mode</button>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
