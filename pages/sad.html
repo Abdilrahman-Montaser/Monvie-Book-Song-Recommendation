@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Media Selector | Sad Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-logo">
+      <a href="../pages/ModeMediaSelector.html"><img src="../images/Logo.png" alt="Logo"></a>
+    </div>
+    <div onclick="toggleNavbar()" class="bars">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-items">
+      <a href="ModeMediaSelector.html" class="nav-item">Home</a>
+      <a href="happy.html" class="nav-item">Happy</a>
+      <a href="sad.html" class="nav-item active">Sad</a>
+      <a href="excited.html" class="nav-item">Excited</a>
+      <a href="romantic.html" class="nav-item">Romantic</a>
+      <a href="../index.html" class="nav-item">Login | Sign up</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="sad" class="section">
+      <h2>Sad Content</h2>
+  <div class="category-title" onclick="getMovieSuggestionsByMood('sad')">Movies</div>
+<div id="suggestions-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;"></div>
+
+      
+      <hr class="divider">
+      <div class="category">
+        <div class="category-title" onclick="toggleCategory(this)">Songs</div>
+        <div class="media-list show">
+          <div class="media-item" onclick="showModal('Song: Someone Like You - Adele')">
+            <img
+              src="https://i.discogs.com/3eL1nvbPY3kQuj9_NzaN9LaCE0VywmSJH1OYuFYjf04/rs:fit/g:sm/q:90/h:560/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczOTY2/NzktMTQ0MDYwNjk0/OC04OTE4LmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Someone Like You - Adele</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Hurt - Johnny Cash')">
+            <img
+              src="https://i.discogs.com/pGsCJ1rdKAA4S8C2_hnRd7Adq4UA4c89i-uXUaN_nzg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDM4/MTEtMTY4ODIzMzkw/Ny02MTUyLmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Hurt - Johnny Cash</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Fix You - Coldplay')">
+            <img
+              src="https://i.discogs.com/5anh7jQG1wN_nGYNrH8BSxhRGh-QkldJeBzFp7kQPcw/rs:fit/g:sm/q:90/h:517/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2MzMz/MC0xNTczNTA0OTkw/LTcxMjguanBlZw.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Fix You - Coldplay</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Everybody Hurts - R.E.M.')">
+            <img
+              src="https://i.discogs.com/QZPeFOY3oA0nh2blGcaanbKCEDmDoBZDSvJRkzrTdfA/rs:fit/g:sm/q:90/h:515/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NzE5/My0xNDU3NzE3NzA4/LTk3OTcuanBlZw.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Everybody Hurts - R.E.M.</div>
+          </div>
+          <div class="media-item" onclick="showModal('Song: Creep - Radiohead')">
+            <img
+              src="https://i.discogs.com/Mz9somFBBprtOGRpDPiPVO_s6gyr5M-XS96AH6Ef_dA/rs:fit/g:sm/q:90/h:405/w:473/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NDI4/MTQtMTM2NTU5MjYx/OS00NDczLmpwZWc.jpeg"
+              class="media-poster" alt="Song Poster">
+            <div>Creep - Radiohead</div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="category">
+        <div class="category-title" onclick="toggleCategory(this)">Books</div>
+        <div class="media-list show">
+          <div class="media-item" onclick="showModal('Book: A Little Life\nAuthor: Hanya Yanagihara')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1474241490i/32073387.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>A Little Life - Hanya Yanagihara</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: The Fault in Our Stars\nAuthor: John Green')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1392479798i/20814047.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>The Fault in Our Stars - John Green</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: Me Before You\nAuthor: Jojo Moyes')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1419046760i/23610810.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>Me Before You - Jojo Moyes</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: Of Mice and Men\nAuthor: John Steinbeck')">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1445423419i/27247616.jpg"
+              class="media-poster" alt="Book Cover">
+            <div>Of Mice and Men - John Steinbeck</div>
+          </div>
+          <div class="media-item" onclick="showModal('Book: The Kite Runner\nAuthor: Khaled Hosseini')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg" class="media-poster"
+              alt="Book Cover">
+            <div>The Kite Runner - Khaled Hosseini</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="media-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <img id="modal-image" src="" alt="Media" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="control-buttons">
+    <button onclick="changeBg('dark')">Dark Mode</button>
+    <button onclick="changeBg('light')">Light Mode</button>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
